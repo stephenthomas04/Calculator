@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
-
+    //catch(Exception e)
         int num1 = Integer.parseInt(number1ET.getText().toString());
         int num2 = Integer.parseInt(number2ET.getText().toString());
         int sum = num1 + num2;
