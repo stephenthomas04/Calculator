@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             int num1 = Integer.parseInt(number1ET.getText().toString());
             int num2 = Integer.parseInt(number2ET.getText().toString());
-            int difference = num1 + num2;
+            int difference = num1 - num2;
             numberSumTV.setText("" + difference);
         } catch (Exception e) {
             numberSumTV.setText("Please enter a valid number");
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             int num1 = Integer.parseInt(number1ET.getText().toString());
             int num2 = Integer.parseInt(number2ET.getText().toString());
-            int product = num1 + num2;
+            int product = num1 * num2;
             numberSumTV.setText("" + product);
         } catch (Exception e) {
             numberSumTV.setText("Please enter a valid number");
@@ -62,11 +62,30 @@ public class MainActivity extends AppCompatActivity {
         try {
             int num1 = Integer.parseInt(number1ET.getText().toString());
             int num2 = Integer.parseInt(number2ET.getText().toString());
-            int quotient = num1 + num2;
+            int quotient = num1 / num2;
             numberSumTV.setText("" + quotient);
         } catch (Exception e) {
             numberSumTV.setText("Please enter a valid number");
         }
+    }
+    public void findSquare(View view) {
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            int num1 = Integer.parseInt(number1ET.getText().toString());
+          //  int num2 = Integer.parseInt(number2ET.getText().toString());
+            int square = num1*num1;
+            numberSumTV.setText("" + square);
+        } catch (Exception e) {
+            numberSumTV.setText("Please enter a valid number");
+        }
+    }
+
+    public void num1(View view) {
+        TextView numberSumTV = findViewById(R.id.result3TV);
+        numberSumTV.setText("1");
+
     }
 
 }
