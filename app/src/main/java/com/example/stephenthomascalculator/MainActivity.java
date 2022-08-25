@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
         try {
-            int num1 = Integer.parseInt(number1ET.getText().toString());
-            int num2 = Integer.parseInt(number2ET.getText().toString());
-            int quotient = num1 / num2;
+            double num1 = Integer.parseInt(number1ET.getText().toString());
+            double num2 = Integer.parseInt(number2ET.getText().toString());
+            double quotient = num1 / num2;
             numberSumTV.setText("" + quotient);
         } catch (Exception e) {
             numberSumTV.setText("Please enter a valid number");
@@ -70,22 +70,24 @@ public class MainActivity extends AppCompatActivity {
     }
     public void findSquare(View view) {
         EditText number1ET = findViewById(R.id.num1ET);
-        EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
         try {
             int num1 = Integer.parseInt(number1ET.getText().toString());
-          //  int num2 = Integer.parseInt(number2ET.getText().toString());
             int square = num1*num1;
             numberSumTV.setText("" + square);
         } catch (Exception e) {
             numberSumTV.setText("Please enter a valid number");
         }
     }
-
-    public void num1(View view) {
-        TextView numberSumTV = findViewById(R.id.result3TV);
-        numberSumTV.setText("1");
-
+    public void findSquareRoot(View view) {
+        EditText number1ET = findViewById(R.id.num1ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            int num1 = Integer.parseInt(number1ET.getText().toString());
+            double squareRoot = (double) Math.sqrt(num1);
+            numberSumTV.setText("" + squareRoot);
+        } catch (Exception e) {
+            numberSumTV.setText("Please enter a valid number");
+        }
     }
-
 }
