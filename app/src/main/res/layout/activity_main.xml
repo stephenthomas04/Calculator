@@ -43,7 +43,7 @@
         android:id="@+id/num2ET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="24sp"
         android:ems="10"
         android:hint="Enter 2nd number: "
         android:inputType="numberDecimal"
@@ -73,14 +73,14 @@
     <Button
         android:id="@+id/buttonADD"
         android:onClick="findSum"
-        android:layout_width="162dp"
-        android:layout_height="72dp"
+        android:layout_width="162sp"
+        android:layout_height="72sp"
         android:background="#FF0000"
         android:backgroundTint="#FFE5B4"
         android:text="ADD"
         android:textAlignment="center"
         android:textColor="#ff0000"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
@@ -90,14 +90,15 @@
 
     <Button
         android:id="@+id/buttonSUB"
-        android:layout_width="162dp"
-        android:layout_height="72dp"
+        android:onClick="findDifference"
+        android:layout_width="162sp"
+        android:layout_height="72sp"
         android:background="#FF0000"
         android:backgroundTint="#FFE5B4"
         android:text="SUBTRACT"
         android:textAlignment="center"
         android:textColor="#ff0000"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
@@ -107,8 +108,9 @@
 
     <Button
         android:id="@+id/buttonMULT"
-        android:layout_width="162dp"
-        android:layout_height="72dp"
+        android:onClick="findProduct"
+        android:layout_width="162sp"
+        android:layout_height="72sp"
         android:background="#FF0000"
         android:backgroundTint="#FFE5B4"
         android:text="MULTIPLY"
@@ -120,34 +122,37 @@
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintVertical_bias="0.796"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonDIVIDE"
-        android:layout_width="162dp"
-        android:layout_height="72dp"
+        android:onClick="findQuotient"
+        android:layout_width="162sp"
+        android:layout_height="72sp"
         android:background="#FF0000"
         android:backgroundTint="#FFE5B4"
         android:text="DIVIDE"
         android:textAlignment="center"
         android:textColor="#ff0000"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.951"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonNUM1"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="1"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
@@ -157,13 +162,13 @@
 
     <Button
         android:id="@+id/buttonNUM2"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="2"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.212"
@@ -173,13 +178,13 @@
 
     <Button
         android:id="@+id/buttonNUM3"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="3"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
@@ -189,13 +194,13 @@
 
     <Button
         android:id="@+id/buttonNUM4"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="4"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
@@ -205,13 +210,13 @@
 
     <Button
         android:id="@+id/buttonNUM5"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="5"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.212"
@@ -221,13 +226,13 @@
 
     <Button
         android:id="@+id/buttonNUM6"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="6"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
@@ -237,13 +242,13 @@
 
     <Button
         android:id="@+id/buttonNUM7"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="7"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
@@ -253,13 +258,13 @@
 
     <Button
         android:id="@+id/buttonNUM8"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="8"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.212"
@@ -269,13 +274,13 @@
 
     <Button
         android:id="@+id/buttonNUM9"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="9"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
@@ -285,13 +290,13 @@
 
     <Button
         android:id="@+id/buttonNUM0"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
+        android:layout_width="58sp"
+        android:layout_height="54sp"
         android:background="#ff0000"
         android:backgroundTint="#BC3030"
         android:text="0"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
@@ -301,12 +306,12 @@
 
     <Button
         android:id="@+id/buttonEQUAL"
-        android:layout_width="129dp"
-        android:layout_height="84dp"
+        android:layout_width="129sp"
+        android:layout_height="84sp"
         android:backgroundTint="@color/orange"
         android:text="="
         android:textColor="@color/white"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.264"
@@ -314,17 +319,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.921" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="192dp" />
-
     <Button
         android:id="@+id/button"
-        android:layout_width="415dp"
-        android:layout_height="23dp"
+        android:layout_width="415sp"
+        android:layout_height="23sp"
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -332,6 +330,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.401" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="94sp"
+        tools:layout_editor_absoluteY="192sp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
